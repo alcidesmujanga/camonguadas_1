@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Camonguadas — Derivados do Porco</title>
+    <meta name="description" content="Loja de chouriço caseiro, carne salgada, torresmo e outros derivados do porco. Produção artesanal e entrega rápida.">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="container header-row">
+            <div class="brand">
+                <h1>Camonguadas</h1>
+                <p class="tag">Derivados artesanais do porco</p>
+            </div>
+
+            <nav id="menu" class="nav">
+                <a href="#produtos">Produtos</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <div class="cart" id="cart">
+                <a class="btn primary" href="https://wa.me/5599999999999" target="_blank" rel="noopener">Pedir via WhatsApp</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero container">
+            <div class="hero-text">
+                <h2>Sabores tradicionais — feitos à mão</h2>
+                <p>Chouriço caseiro, carne salgada, torresmo crocante e muito mais. Ingredientes selecionados e preparo artesanal.</p>
+                <a class="cta" href="#produtos">Ver Produtos</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1604908177227-c9f3e2f2d0e0?auto=format&fit=crop&w=800&q=80" alt="Chouriço e cortes artesanais">
+            </div>
+        </section>
+
+        <section id="produtos" class="container produtos">
+            <h2>Produtos em Destaque</h2>
+            <div class="grid">
+                <article class="card" data-id="1" data-name="Chouriço Caseiro" data-price="28.00">
+                    <img src="https://images.unsplash.com/photo-1604908177227-c9f3e2f2d0e0?auto=format&fit=crop&w=600&q=60" alt="Chouriço caseiro">
+                    <div class="card-body">
+                        <h3>Chouriço Caseiro</h3>
+                        <p>Tempero tradicional, defumado na medida. Pacote 1kg.</p>
+                        <div class="card-footer">
+                            <strong>Kz 6 500,00</strong>
+                            <button class="btn order-btn" type="button" data-name="Chouriço Caseiro" data-price="28.00">Pedir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card" data-id="2" data-name="Carne Salgada" data-price="35.00">
+                    <img src="https://images.unsplash.com/photo-1568572933382-74d440642117?auto=format&fit=crop&w=600&q=60" alt="Carne salgada">
+                    <div class="card-body">
+                        <h3>Carne Salgada</h3>
+                        <p>Corte selecionado, salga artesanal para sabor autêntico. Pacote 500g.</p>
+                        <div class="card-footer">
+                            <strong>Kz 1 500,00</strong>
+                            <button class="btn order-btn" type="button" data-name="Carne Salgada" data-price="35.00">Pedir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card" data-id="3" data-name="Torresmo Crocante" data-price="16.00">
+                    <img src="https://images.unsplash.com/photo-1582918233578-8e3037f8fcd6?auto=format&fit=crop&w=600&q=60" alt="Torresmo crocante">
+                    <div class="card-body">
+                        <h3>Torresmo Crocante</h3>
+                        <p>Frito na hora, crocância perfeita. Embalagem 300g.</p>
+                        <div class="card-footer">
+                            <strong>Kz 1 500,00</strong>
+                            <button class="btn order-btn" type="button" data-name="Torresmo Crocante" data-price="16.00">Pedir</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="sobre" class="container about">
+            <h2>Sobre nós</h2>
+            <p>Produzimos derivados do porco com receitas tradicionais e controle rígido de qualidade. Atendimento local e entregas rápidas.</p>
+            <ul class="features">
+                <li>Produção artesanal</li>
+                <li>Ingredientes selecionados</li>
+                <li>Entrega refrigerada</li>
+            </ul>
+        </section>
+
+        <section id="faq" class="container faq">
+            <h2>Perguntas Frequentes</h2>
+            <details><summary>Como conservar os produtos?</summary><p>Mantenha refrigerado entre 0°C e 4°C. Para longa conservação, congelar.</p></details>
+            <details><summary>Faz entregas?</summary><p>Sim, entregamos em áreas próximas. Consulte taxas no contato.</p></details>
+            <details><summary>Há opções para atacado?</summary><p>Sim — entre em contato para preços e frete.</p></details>
+        </section>
+
+        <section id="contato" class="container contato">
+            <h2>Fazer Pedido / Contato</h2>
+            <form id="contactForm" action="#" method="post">
+                <div class="form-grid">
+                    <input type="text" name="nome" placeholder="Seu nome" required>
+                    <input type="tel" name="telefone" placeholder="Telefone / WhatsApp" required>
+                    <input type="email" name="email" placeholder="Seu e-mail" required>
+                </div>
+                <textarea name="mensagem" placeholder="Mensagem / Pedido (ex: 2x Chouriço, 1x Torresmo)" required></textarea>
+                <div class="form-actions">
+                    <button type="submit" class="btn primary">Enviar Pedido</button>
+                    <a class="btn ghost" href="https://wa.me/5599999999999" target="_blank" rel="noopener">Pedir via WhatsApp</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-row">
+            <div>© 2025 Sabor do Leitão</div>
+            <div>Feito com cuidado | Produção artesanal</div>
+        </div>
+    </footer>
+
+    <script>
+        // Número do WhatsApp (formato internacional, sem + ou zeros à esquerda)
+        const WA_PHONE = '+244973214515';
+
+        function openWhatsApp(message) {
+            const url = `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank', 'noopener');
+        }
+
+        // Botões de pedido por produto (abre WhatsApp com mensagem pré-preenchida)
+        document.querySelectorAll('.order-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const name = btn.dataset.name;
+                const price = parseFloat(btn.dataset.price || '0');
+                const qty = prompt(`Quantidade de "${name}"`, '1');
+                if (!qty) return;
+                const qtyNum = Math.max(1, parseInt(qty.replace(/\D/g,'')) || 1);
+                const total = (price * qtyNum).toFixed(2);
+                const msg = `Olá, gostaria de fazer um pedido:\n- ${qtyNum}x ${name} — R$ ${total}\n\nNome:\nEndereço/Observações:\nTelefone:`;
+                openWhatsApp(msg);
+            });
+        });
+
+        // Formulário: abre WhatsApp com dados do formulário
+        document.getElementById('contactForm').addEventListener('submit', function(e){
+            e.preventDefault();
+            const form = e.currentTarget;
+            const nome = form.nome.value.trim();
+            const telefone = form.telefone.value.trim();
+            const email = form.email.value.trim();
+            const mensagem = form.mensagem.value.trim();
+            const msg = `Pedido / Contato:\nNome: ${nome}\nTelefone: ${telefone}\nE-mail: ${email}\n\nMensagem:\n${mensagem}`;
+            openWhatsApp(msg);
+            form.reset();
+        });
+    </script>
+</body>
+</html>
